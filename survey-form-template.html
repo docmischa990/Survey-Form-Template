@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mischas Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Mischas Survey Form</h1>
+    <p id="description">
+      Thanks for taking the time to be a part of this study
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Enter Your Full Name:</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Enter your Full Name"
+          required
+        />
+        <label id="email-label" for="email">Enter Your Email:</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Enter your Email"
+          required
+        />
+        <label id="number-label" for="number">Age (optional):</label>
+        <input
+          id="number"
+          name="number"
+          type="number"
+          placeholder="Enter your Age"
+          min="15"
+          max="80"
+        />
+      </fieldset>
+
+      <fieldset>
+        <label for="relation">What Is Your Relationship With Mischa?</label>
+        <select id="dropdown" name="relation" class="relation">
+          <option value="">(select one)</option>
+          <option value="1">Family</option>
+          <option value="2">Friend</option>
+          <option value="3">Partner</option>
+          <option value="4">Colleague</option>
+          <option value="5">Other</option>
+        </select>
+
+        <label for="other-relation"
+          >If other then please describe your relationship:</label
+        >
+        <textarea
+          id="other-textarea"
+          name="other-relation"
+          rows="3"
+          cols="30"
+          class="relation"
+          placeholder="Please describe your relationship"
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>How did you hear about the survey? (required)</legend>
+        <label class="inline-label">
+          <input
+            value="1"
+            id="from-mischa"
+            type="radio"
+            name="information-gathering"
+            checked
+          />
+          From Mischa
+        </label>
+        <label class="inline-label">
+          <input
+            value="2"
+            id="from-pets"
+            type="radio"
+            name="information-gathering"
+          />
+          From Mischa's Pets
+        </label>
+        <label class="inline-label">
+          <input
+            value="3"
+            id="other"
+            type="radio"
+            name="information-gathering"
+          />
+          Other
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          What coding languages/courses would you like Mischa to try out next?
+        </legend>
+        <label class="inline-checkbox">
+          <input
+            id="python"
+            value="py"
+            type="checkbox"
+            name="language-course"
+          />
+          Python
+        </label>
+        <label class="inline-checkbox">
+          <input
+            id="javascript"
+            value="jvs"
+            type="checkbox"
+            name="language-course"
+          />
+          JavaScript
+        </label>
+        <label class="inline-checkbox">
+          <input id="java" value="jv" type="checkbox" name="language-course" />
+          Java
+        </label>
+        <label class="inline-checkbox">
+          <input id="c++" value="c++" type="checkbox" name="language-course" />
+          C++
+        </label>
+        <label class="inline-checkbox">
+          <input
+            id="typescript"
+            value="typescript"
+            type="checkbox"
+            name="language-course"
+          />
+          TypeScript
+        </label>
+        <label class="inline-checkbox">
+          <input
+            id="swift"
+            value="swft"
+            type="checkbox"
+            name="language-course"
+          />
+          Swift
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="submit" />
+    </form>
+  </body>
+</html>
